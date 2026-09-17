@@ -26,7 +26,7 @@ class FileSdIConMetadati extends FileSdI
     public $NomeFileMetadati = null;
     public $Metadati = null;
 
-    public function __construct( \StdClass $parametersIn = null )
+    public function __construct( ?\StdClass $parametersIn = null )
     {
         parent::__construct($parametersIn);
 

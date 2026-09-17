@@ -26,7 +26,7 @@ class FileSdIBase
     public $NomeFile = null;
     public $File = null;
 
-    public function __construct( \StdClass $parametersIn = null )
+    public function __construct( ?\StdClass $parametersIn = null )
     {
         if ($parametersIn) {
             if (!property_exists($parametersIn, 'NomeFile')) {

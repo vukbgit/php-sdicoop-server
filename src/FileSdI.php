@@ -25,7 +25,7 @@ class FileSdI extends FileSdIBase
 {
     public $IdentificativoSdI = null;
 
-    public function __construct( \StdClass $parametersIn = null )
+    public function __construct( ?\StdClass $parametersIn = null )
     {
         parent::__construct($parametersIn);
 
