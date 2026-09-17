@@ -29,7 +29,7 @@ class WebService extends \SoapServer
             $msg = "ERROR: $msg";
         }
 
-        openlog(get_class(), 0, LOG_LOCAL0);
+        openlog(static::class, 0, LOG_LOCAL0);
         syslog($priority, $msg);
         closelog();
     }
